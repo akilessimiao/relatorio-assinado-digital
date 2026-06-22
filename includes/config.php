@@ -13,11 +13,23 @@ define('ALLOWED_EXTENSIONS', ['png', 'jpeg', 'jpg']);
 define('UPLOAD_IMG_DIR', 'assets/img/');
 define('UPLOAD_PDF_DIR', 'assets/pdf/');
 
-// Configurações de Banco (Opcional)
-define('DB_HOST', 'myshared2069');
-define('DB_USER', 'tanquedigital');
-define('DB_NAME', 'tanquedigital');
-define('DB_PASS', 'Akiles1539@@##');
+// =============================================
+// ⚠️ ATENÇÃO: NUNCA COLOQUE DADOS REAIS AQUI!
+// Use um arquivo .env ou variáveis de ambiente
+// =============================================
+
+// Configurações de Banco (LEIA OS COMENTÁRIOS!)
+// Para desenvolvimento local:
+// define('DB_HOST', 'localhost');
+// define('DB_USER', 'root');
+// define('DB_NAME', 'meubanco');
+// define('DB_PASS', '');
+
+// Para produção, use variáveis de ambiente ou .env
+// define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
+// define('DB_USER', getenv('DB_USER') ?: 'root');
+// define('DB_NAME', getenv('DB_NAME') ?: 'meubanco');
+// define('DB_PASS', getenv('DB_PASS') ?: '');
 
 // Configuração de Timezone
 date_default_timezone_set(TIMEZONE);
